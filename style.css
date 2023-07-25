@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f8f8f8;
+}
+
+/* NavBar CSS*/
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1c1a1ae3;
+    color: white;
+    height: 60px;
+}
+
+.navbar p{
+    align-self: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+
+.navbar ul li a:hover{
+    color: grey;
+}
+
+.navbar  img{
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.naving{
+    display: flex;
+    background-color: #1c1a1ae3;
+    flex-direction: column;
+    display: none;
+}
+.naving img{
+    width: 20px;
+    margin: 10px 10px;
+}
+.naving li{
+    list-style: none;
+    text-align: center;
+}
+
+.naving li a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-family:'Poppins';
+    
+}
+@media  (max-width:950px) {
+    .navbar{
+        justify-content: space-evenly;
+    }
+    .navbar img{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+    }
+
+}
+/* Home CSS */
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.content img{
+    width: 400px;
+}
+.content .info{
+    margin-top: 100px;
+}
+.content p{
+    font-size: 40px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.content .passion{
+    margin-top: 20px;
+}
+
+.content p span{
+    color: #1313ff;;
+}
+
+.content button{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    font-size: 15px;
+    margin-top: 25px;
+    padding: 10px;
+    border: 1px solid #1c1a1ae3;
+    border-radius: 20px;
+    color: grey;
+}
+
+.content button:hover{
+    background-color:#1c1a1ae3;
+    color: white;
+}
+/* Home responsive design*/
+@media only screen and (max-width: 1400px){
+    .content img{
+        width: 300px;
+    }
+
+    .content{
+        margin-top: 20px;
+    }
+
+    .content .info{
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+    .content p{
+        font-size: 20px;
+        font-family:'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+    
+}
+
+@media  (max-width:950px){
+    .content img{
+        display: none;
+    }
+
+    .content{
+        margin-top: 20px;
+    }
+    .content .info{
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+    .content p{
+        font-size: 20px;
+        font-family:'Montserrat', sans-serif;
+        font-weight: 700;
+        margin-left: 100px;
+    }
+
+    .content button{
+        width: 150px;
+        height: 40px;
+        background-color: white;
+        font-size: 15px;
+        margin-top: 25px;
+        padding: 10px;
+        border: 1px solid #1c1a1ae3;
+        border-radius: 20px;
+        color: grey;
+        margin-left: 100px;
+    }
+}
+
+@media (min-width:300px) and (max-width:550px){
+    .content p{
+        font-size: 18px;
+        margin-left: 0px;
+    }
+
+    .content button{
+        margin-left: 0px;
+        width: 100px;
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+/* About Section CSS*/
+
+.about{
+    display: flex;
+    flex-direction: column;  
+    margin-top: 150px;
+}
+
+.about .heading{
+    margin:50px 110px;
+}
+
+.about .heading p{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:#1c1a1ae3;
+}
+
+.about .para{
+    margin-left: 110px;
+    margin-right: 70px;
+}
+
+.about .para p{
+    font-size: 20px; 
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 700;
+    color: grey;
+    padding-right: 20px;
+} 
+
+.about .professional{
+    display: flex;
+    margin: 30px 110px;
+
+}
+
+.about .professional p{
+    font-size: 25px;
+    font-family: 'montserrat',sans-serif;
+    margin-right: 250px;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+ .information p{
+    font-size: 15px;
+    font-family: 'montserrat',sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 110px;
+}
+ .information .red{
+    color: blue;
+    margin-bottom: 0px;
+    margin-top: 10px;   
+}
+
+#educate{
+    display: none;
+}
+#skills{
+    border-bottom: 2px solid blue;
+}
+
+/* Responsive About */
+@media only screen and (max-width: 1400px){
+    .about{  
+        margin-top: 50px;
+    }
+    .about .heading{
+        margin:20px 110px;
+    }
+    .about .heading p{
+        font-size: 40px;
+    }
+    .about .para{
+    margin-right: 100px;
+    }
+
+    .about .para p{
+        font-size: 15px; 
+        padding-right: 10px;
+    } 
+
+    .about .professional{
+        margin: 20px 110px;
+    }
+
+    .about .professional p{
+        font-size: 20px;
+        margin-right: 150px;   
+    }
+    
+}
+
+@media  (max-width:950px){
+    
+    .about .heading{
+        margin:20px 10px;
+    }
+
+    .about .para{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .about .professional{
+        margin: 20px 10px;
+    }
+
+    .information p{
+        font-size: 15px;
+        font-family: 'montserrat',sans-serif;
+        font-weight: bold;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width:300px) and (max-width:550px){
+    .about{
+        justify-content: space-around;
+    }
+    .about .para{
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+    .about .professional p{
+        font-size: 25px;
+        font-family: 'montserrat',sans-serif;
+        margin-right: 20px;
+        color:black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+
+}
+
+/* Services */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+}
+
+.services .heading{
+    margin: 0px 110px;
+}
+
+.services .heading p{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:#1c1a1ae3;
+
+}
+
+.services .contexts{
+    display: flex;
+    margin: 100px 110px;
+}
+
+.services .contexts div{
+    height: 300px;
+    width: 350px;
+    border: 2px solid black;
+    background-color: white;
+    padding: 30px;
+    padding-top: 10px;
+    margin-right: 60px;
+    border-radius: 30px;
+}
+
+
+
+.services .contexts img{
+    width: 70px;
+}
+
+.services .contexts .app img{
+    width: 50px;
+    margin-top: 20px;
+}
+
+.services .contexts .head{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #1c1a1ae3;
+    margin-top: 10px;
+}
+
+.services .contexts .para{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.services .contexts a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family:'Montserrat', sans-serif ;
+    color: #1c1a1ae3;
+    font-weight: bold;
+}
+
+.services .contexts a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+
+/* Responsive services*/
+@media only screen and (max-width: 1400px){
+    .services{
+        margin-top: 240px;
+    }
+
+    .services .heading p{
+        font-size: 40px;  
+    }
+
+    .services .contexts{
+        margin: 50px 110px;
+    }
+
+    .services .contexts div{
+        height: 200px;
+        width: 500px;
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+    .services .contexts img{
+        width: 40px;
+    }
+    .services .contexts .app img{
+        width: 20px;
+    }
+    .services .contexts .head{
+        font-size: 15px;
+    }
+    .services .contexts .para{
+        font-size: 10px;
+    }
+    .services .contexts a{
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:950px){
+    .services .heading{
+        margin: 0px 10px;
+    }
+
+    .services .contexts{
+        margin: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .services .contexts div{
+        margin-right: 30px;
+        width: 300px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        height: 200px;
+    }
+
+    .services .contexts .head{
+        font-size: 12px;
+    }
+}
+
+/* contact */
+
+
+
+.contact{
+    display: flex;
+    margin-top: 250px;
+}
+
+.contact section{
+    margin-right: 40px;
+}
+.contact .heading{
+    margin: 0px 110px;
+}
+
+.contact .heading p{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:#1c1a1ae3;
+    margin-bottom: 50px;
+}
+
+
+.contact section .common{
+    display: flex;
+    margin: 40px 110px;
+}
+
+.contact section p{
+    font-size: 25px;
+    font-family:'Montserrat', sans-serif ;
+    font-weight: bold;
+    color: #1c1a1ae3;
+}
+
+.contact section img{
+    width: 25px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 1400px){
+    .contact section{
+        margin-right: 0px;
+    }
+
+    .contact .heading p{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .contact section p{
+        font-size: 15px;
+    }
+    .contact section img{
+        width: 20px;
+    }
+}
+
+@media (max-width:950px){
+    .contact .heading p{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .contact .heading{
+        margin: 0px 10px;
+    }
+
+    .contact section .common{
+        display: flex;
+        margin: 40px 10px;
+    }
+    .contact{
+        display: flex;
+        margin-top: 250px;
+        flex-direction: column;
+    }
+}
+
+/* Contact Form */
+
+.contact section form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.contact section form input{
+    margin-bottom: 20px;
+    width: 520px;
+    height: 50px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: grey;
+}
+
+input:focus{
+    outline: none;
+}
+
+.contact section form textarea{
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+    font-weight: bold;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.contact section form textarea:focus{
+    outline: none;
+}
+
+.contact section form #button{
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.contact section form #button:hover{
+    background-color:#1c1a1ae3;
+    color: white;
+}
+
+
+/*Contact form  responsive */
+@media only screen and (max-width: 1400px){
+    .contact section form{
+        margin-left: 40px;
+    }
+
+    .contact section form input{
+        width: 420px;
+        height: 50px;
+    }
+}
+
+@media  (max-width:950px){
+    .contact section form{
+        margin-left: 10px;
+    }
+
+    .contact section form input{
+        width: 320px;
+        height: 50px;
+    }
+
+    .contact section form textarea{
+        width: 320px;
+    }
+
+}
+
+
+@media (min-width:300px) and (max-width:550px){
+    .contact section form input{
+        width: 270px;
+        height: 50px;
+    }
+
+    .contact section form textarea{
+        width: 270px;
+    }
+
+    .services .contexts div{
+       
+        width: 250;
+    }
+}
+
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadrash's Portfolio... </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar">
+        <p class="name">Aadrash's Portfolio </p>
+        <ul class="nav">
+            <li class="elements"><a href="#home">Home</a></li>
+            <li class="elements"><a href="#About">About</a></li>
+            <li class="elements"><a href="#services">My Services</a></li>
+            <li class="elements"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <img src="bars-solid.svg" alt="" class="col" id="col">
+    </nav>
+
+    <ul class="naving" id="naving">
+        <img src="x-solid.svg" alt="" id="close">
+        <li class="elements"><a href="#home">Home</a></li>
+        <li class="elements"><a href="#About">About</a></li>
+        <li class="elements"><a href="#services">My Services</a></li>
+        <li class="elements"><a href="#contact">Contact</a></li>
+    </ul>
+
+
+    <!-- Home -->
+    <main>
+    <div class="content" id="home">
+        <div class="info">
+            <p class="context">Hi , My Name is <span>Aadrash Kaushal</span></p>
+            <p class="passion"> And I am a <span id="span"></span></p>
+            <a href="Aadrash Kaushal NextLevel Resume (1).pdf"><button type="button" class="button">Download CV</button></a>
+        </div>
+        <div class="image">
+            <img src="develop.png">
+        </div>
+    </div>
+
+    <!-- About Page -->    
+
+    <div class="about" id="About">
+        <div class="heading">
+            <p>About Me</p>
+        </div>
+        <div class="para">
+        <p>
+            I am Pursuing a Bachelor's Degree in Computer Science from Guru Nanak Dev University in Amritsar, India. 
+            Advancing knowledge in Algorithms, Operating Systems, Data Structures, and Database Management. 
+            I was ables provided me with valuable knowledge in HTML to use HTML and CSS to create functioning webpages and deliver impactful results.
+             My experience with HTML and CSS has enabled me to design and develop webpages that are visually appealing and user friendly. 
+             As a result, I have been able to enhance the look of webpages and improve their overall usability. 
+             Furthermore, I am confident in my ability to make efficient use of HTML and CSS to create webpages and tailored user experiences .
+        </p>
+        </div>
+        <div class="professional">
+            <div class="skills">
+                <p class="pro" id="skills"> Skills </p>
+            </div>    
+
+            <div class="education" >
+                <p class="pro" id="education"> Education </p>  
+            </div>
+        </div>
+    </div>
+
+    <div class="information" id="skill">
+        <p class="red"> ui/ux </p>
+        <p>Designing Web/App Interface</p>
+
+        <p class="red">Web Development</p>
+        <p>FullStack Development using HTML,CSS and NodeJS</p>
+
+        <p class="red">Desktop App Development</p>
+        <p>Building Desktop App using Python</p>
+    </div>
+
+    <div class="information" id="educate">
+        <p class="red">2018</p>
+        <p>Passing Year of 10th under CBSE. </p>
+
+        <p class="red">2018-2021</p>
+        <p>Pursuing Diploma at Mehr Chand PolyTechnic. </p>
+
+        <p class="red">2021-2024</p>
+        <p>Pursuing Bachelor's Degree in Computer Science from Guru nanak Dev University</p>
+    </div>
+
+    <!-- My Services -->
+
+    <div class="services" id="services">
+        <div class="heading">
+            <p>My Services</p>
+        </div>
+        <div class="contexts">
+            <div class="web">
+                <img src="html.png" alt="">
+                <p class="head">Web App Design</p>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, eum maiores. Veniam voluptate debitis reicie .
+                </p>
+                <a href="#" id="a">Learn More</a>
+            </div>
+            <div class="ui">
+                <img src="css.jpg" alt="">
+                <p class="head">UI/UX</p>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, eum maiores. Veniam voluptate debitis reicie .
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="app">
+                <img src="python1.png" alt="">
+                <p class="head" >Desktop App Design</p>
+                <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, eum maiores. Veniam voluptate debitis reicie .
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div class="contact" id="contact">
+        <section>
+            <div class="heading">
+                <p>Contact Me</p>
+            </div>
+
+            <div class="common">
+                <img src="telegram.svg" alt="">
+                <p>sharmaadarsh180@gmail.com</p>
+            </div>
+
+            <div class="common">
+                <img src="square-phone-solid.svg" alt="">
+                <p>9876860219</p>
+             
+            </div>
+
+            <div class="common">
+                <a href="https://www.linkedin.com/in/aadrash-kaushal-2856671ba/"><img src="linkedin.svg" alt=""></a>
+                <a href="https://github.com/adarshsharmaaa/Web-Development"><img src="github.svg" alt=""></a>
+                <a href="https://www.instagram.com/sharmaadarsh777/"><img src="instagram.svg" alt=""></a>
+            </div>
+        </section>
+        <section>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" name="name" id="name" placeholder="Your Name" class="input">
+                <input type="email" name="email" id="email" placeholder="Your Email" class="input">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" class="input"></textarea>
+                <input type="submit" value="Submitt" class="input" id="button">
+            </form>
+        </section>
+    </div>
+
+    </main>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#span', {
+        strings: ['Web Developer.'],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop:true,
+      });
+      function sendEmail(){
+                Email.send({
+                SecureToken : "67f31f26-baf9-47a4-bb9b-12bc735e8c3f",
+                To : 'aadrash180@gmail.com',
+                From : "sharmaadarsh180@gmail.com",
+                Subject : "New Contact Form enquiry",
+                Body : "Name : "+document.getElementById('name').value
+                    +"<br>Email : "+document.getElementById('email').value
+                    + "<br>Message : "+document.getElementById('message').value
+                }).then(
+                message => alert(message)
+                );
+      }
+     
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
